@@ -1,0 +1,19 @@
+.about-quote {
+  font-style: italic;
+  color: #555;
+  position: relative;
+  padding: 1em 1.5em;
+  margin: 1em 0;
+  border-left: 4px solid #f76902;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.about-quote::before {
+  content: "“";
+  font-size: 3em;
+  color: #f76902;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}

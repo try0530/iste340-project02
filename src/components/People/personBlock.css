@@ -1,0 +1,140 @@
+.person-block {
+  width: 15vw;
+  height: 15vw;
+  cursor: pointer;
+  position: relative;
+  margin: 1em;
+}
+
+.person-block-container {
+  width: 100%;
+  height: 100%;
+}
+
+.person-block-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.person-block-container .person-basic-info {
+  bottom: -100px;
+  transition: transform 0.5s ease, bottom 0.5s ease;
+  opacity: 0;
+}
+
+/* make the picture darker when hover*/
+.person-block:hover .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* shows the name and title when hover*/
+.person-block:hover .person-basic-info {
+  display: block;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  margin: 1rem;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.person-details-block {
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  background-color: #ffffff;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40vw;
+  height: auto;
+  z-index: 1;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.close-person-details {
+  position: fixed;
+  padding: 10px;
+  top: calc(30% + 10px);
+  right: calc(30% + 10px);
+  cursor: pointer;
+}
+
+.person-details-info {
+  margin: 1rem;
+}
+
+.person-details-info .img-block {
+  width: 10vw;
+  height: 10vw;
+}
+
+.img-block img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.info-block {
+  margin: 1rem auto;
+}
+
+.info-block ul li {
+  display: flex;
+  align-items: center;
+}
+
+.info-block ul li img {
+  width: 2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .person-block {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .person-details-block {
+    width: 40vw;
+    height: auto;
+  }
+
+  .person-details-info .img-block {
+    width: 20vw;
+    height: 20vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .person-block {
+    width: 20vw;
+    height: 30vh;
+  }
+
+  .person-details-block {
+    left: 10%;
+    width: 80vw;
+    height: auto;
+  }
+
+  .person-details-info .img-block {
+    width: 30vw;
+    height: 30vw;
+  }
+
+  .close-person-details {
+    right: calc(20% + 10px);
+  }
+
+  .info-block ul li img {
+    width: 1rem;
+  }
+}

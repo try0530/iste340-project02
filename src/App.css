@@ -1,0 +1,49 @@
+/* using important because semantic react has setting of h1-h5 margin-top: 0 */
+h2,
+h3,
+h4,
+h5 {
+  margin: 1rem auto !important;
+}
+
+/* grid settings */
+.header {
+  grid-area: header;
+}
+
+.menu-div {
+  grid-area: menu;
+}
+
+.details-div {
+  grid-area: details;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.app {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu details"
+    "footer footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 15% 1fr;
+  min-height: 100vh;
+  gap: 2em;
+}
+
+.section-div {
+  margin: 1em;
+  min-height: 5em;
+}
+
+@media only screen and (max-width: 1200px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+}

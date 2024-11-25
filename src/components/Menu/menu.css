@@ -1,0 +1,15 @@
+.menu-div {
+  position: sticky;
+  margin-left: 1em;
+  top: 10px;
+  height: fit-content;
+}
+
+@media only screen and (max-width: 1200px) {
+  .menu-div {
+    position: sticky;
+    margin: 0;
+    top: 0;
+    z-index: 99999;
+  }
+}

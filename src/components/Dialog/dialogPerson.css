@@ -1,0 +1,49 @@
+.dialog-person {
+  display: flex;
+}
+
+.interest-area-list {
+  display: flex;
+  margin: 0.5em auto;
+  flex-wrap: wrap;
+}
+
+.interest-area-list li {
+  padding: 0.2em 1em;
+  margin: 0.5em;
+  border-radius: 16px;
+  background-color: #d0d3d4;
+}
+
+.dialog-person-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dialog-person-info {
+  display: flex;
+  align-items: center;
+}
+
+.dialog-person-info a {
+  display: flex;
+  justify-content: center;
+  color: #333333;
+  padding: 5px;
+}
+
+.dialog-person-info a:hover {
+  color: #ffffff;
+  background-color: #f76902;
+}
+
+.dialog-person-info a:active {
+  background-color: #af4a01;
+}
+
+@media only screen and (max-width: 768px) {
+  .dialog-person {
+    flex-wrap: wrap;
+  }
+}

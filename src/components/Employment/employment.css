@@ -1,0 +1,23 @@
+.employers-careers-list {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1em;
+}
+
+.employment-employers-div,
+.employment-careers-div {
+  margin: 1em 2em;
+}
+
+.googlemap-div {
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  .employers-careers-list {
+    justify-content: space-between;
+  }
+
+  .googlemap-div {
+    flex-wrap: wrap;
+  }
+}

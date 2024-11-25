@@ -1,0 +1,22 @@
+.statistics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.statistic {
+  width: 15vw;
+  margin: 0.5em 1em;
+}
+
+@media only screen and (max-width: 1200px) {
+  .statistic {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .statistic {
+    width: 80vw;
+  }
+}

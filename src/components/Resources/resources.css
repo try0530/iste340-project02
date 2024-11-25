@@ -1,0 +1,65 @@
+/* study abroad */
+.places-div {
+  display: flex;
+  background-color: #eeeeee;
+  border-radius: 16px;
+  flex-wrap: wrap;
+}
+
+.place-card {
+  margin: 2em;
+  width: 30vw;
+}
+
+/* student services */
+.advisor-email {
+  display: flex;
+}
+
+/* student ambassadors */
+.ambassadors-note {
+  margin: 1em;
+}
+
+/* forms */
+.category-forms-div {
+  display: flex;
+}
+
+.category-forms-div a {
+  margin: 0.3em;
+  padding: 5px;
+  display: block;
+  color: #000000;
+  border: 1px solid #f76902;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.category-forms-div a:hover {
+  color: #ffffff;
+  background-color: #f76902;
+  border: 1px solid #f76902;
+}
+
+.category-forms-div a:active {
+  background-color: #af4a01;
+  border: 1px solid #af4a01;
+}
+
+/* coop enrollment */
+.enrollment-info-div {
+  margin: 1em 0;
+}
+
+@media only screen and (max-width: 768px) {
+  /* study aboard */
+  .place-card {
+    margin: 0.5em;
+    width: 30vw;
+  }
+  /* forms */
+  .category-forms-div {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,44 @@
+.faculty-research-div {
+  position: relative;
+}
+
+/* !important to cover the setting from MUI */
+.MuiChip-colorDefault {
+  background-color: #ffffff !important;
+  border: 1px solid #f76902 !important;
+  margin: 0.5em !important;
+}
+
+.MuiChip-colorDefault:hover {
+  color: #ffffff;
+  background-color: #f76902 !important;
+  border: 1px solid #f76902;
+}
+
+.MuiChip-colorDefault:active {
+  color: #ffffff;
+  background-color: #af4a01 !important;
+  border: 1px solid #af4a01 !important;
+}
+
+.faculty-research-list,
+.interest-area-research-list {
+  position: fixed;
+  top: 30%;
+  left: 30%;
+}
+
+.dialog-title {
+  color: #f76902;
+}
+
+.dialog-interest-area ul,
+.dialog-faculty-research ul {
+  list-style: inside;
+  list-style-position: outside;
+}
+
+.dialog-interest-area ul li,
+.dialog-faculty-research ul li {
+  margin: 1em;
+}

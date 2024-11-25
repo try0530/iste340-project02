@@ -1,0 +1,33 @@
+.tab-content-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.faculty-block,
+.staff-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.faculty-block > *,
+.staff-block > * {
+  flex-shrink: 1;
+  flex-basis: 15em;
+}
+
+@media only screen and (max-width: 1200px) {
+  .faculty-block > *,
+  .staff-block > * {
+    flex-basis: 10em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .faculty-block > *,
+  .staff-block > * {
+    flex: 1 1 10em;
+  }
+}

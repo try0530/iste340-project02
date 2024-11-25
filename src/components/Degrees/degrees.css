@@ -1,0 +1,19 @@
+.degree-div {
+  width: 80vw;
+}
+
+.concentrations ul {
+  display: flex;
+  gap: 10px;
+}
+.concentration {
+  border: 1px solid #f76902;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .concentrations ul {
+    flex-wrap: wrap;
+  }
+}
